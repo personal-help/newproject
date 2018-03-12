@@ -1,0 +1,92 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.row{clear: both;}
+
+.cont{
+    width: 100%;
+    height: auto;
+}
+
+.cont .cols{
+    float: left;
+    margin: 0 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+}
+
+.cont .cols.col-1,
+.cont .cols.col-2,
+.cont .cols.col-3,
+.cont .cols.col-4,
+.cont .cols.col-5,
+.cont .cols.col-6,
+.cont .cols.col-7,
+.cont .cols.col-8,
+.cont .cols.col-9,
+.cont .cols.col-10 {width: 100%;}
+
+@media screen and (min-width: 640px){
+    .cont{
+        width: 70%;
+    }
+    
+    .cont .cols.col-1 {width: 10%;}
+    .cont .cols.col-2 {width: 20%;}
+    .cont .cols.col-3 {width: 30%;}
+    .cont .cols.col-4 {width: 40%;}
+    .cont .cols.col-5 {width: 50%;}
+    .cont .cols.col-6 {width: 60%;}
+    .cont .cols.col-7 {width: 70%;}
+    .cont .cols.col-8 {width: 80%;}
+    .cont .cols.col-9 {width: 90%;}
+    .cont .cols.col-10 {width: 100%;}
+}
+
+body{
+    background-image: url(img/fon.jpeg);
+}
+
+header{
+
+    background: #000;
+    height: 30px;
+    width: 100%;
+    color: white; 
+    font-size: 1.3em;
+}
+
+.hd:hover{
+    background: grey;
+}
+
+.logo{
+    margin: 40px 0; 
+    padding: 30px;
+    background: rgba(255,255,255,0.6);
+    font-family: fantasy;
+    font-size: 1.8em;
+}
+
+.main{
+    height: auto;
+    width: 100%;
+    border: 3px solid coral;
+}
+
+.menu{
+    padding: 20px 0;
+    background: rgba(255,255,255,0.6);;
+    border-bottom: 3px solid rgba(255,1,225,1);
+    width: 14.28%;
+    margin: 0 auto;
+    float: left;
+}
+
+p{
+    padding: 20px;
+    float: left;
+}
