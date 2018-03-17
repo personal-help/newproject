@@ -2,7 +2,7 @@
 include "db.php";
     if (isset($_POST["Identification"]))
     {
-    $sql = mysql_query("INSERT INTO `survay`(Identification, Password, STitle, SDescription, TSurvey, FName, FCompany, Employees, StartDate, EndDate, Question, TypeAnswer, OptionsList)VALUES (                                                                           '".$_POST['Identification']."',
+    $sql = mysql_query("INSERT INTO `survey`(Identification, Password, STitle, SDescription, TSurvey, FName, FCompany, Employees, StartDate, EndDate, Question, TypeAnswer, OptionsList)VALUES (                                                   '".$_POST['Identification']."',
                                             '".$_POST['Password']."',
                                             '".$_POST['STitle']."',
                                             '".$_POST['SDescription']."',

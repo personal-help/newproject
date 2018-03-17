@@ -17,7 +17,7 @@
                 </div>
             </h2>
 
-            <form class="ui large form">
+            <form class="ui large form" method="get">
                 <div class="ui stacked segment">
                     <div class="field">
                         <div class="ui left icon input">
@@ -25,13 +25,27 @@
                             <input type="text" name="email" placeholder="E-mail address">
                         </div>
                     </div>
-                    <button class="ui fluid large teal submit button">Access</button>
+                    <button type="submit" class="ui fluid large teal submit button">Access</button>
                 </div>
             </form>
+    <?php
+      include "db.php";
+      $email =  $_GET['email'];
+      if (isset($email))
+      {
+          $search_name = mysql_query("SELECT email FROM `login` WHERE (`email`) LIKE '%$email%'");
+          if (mysql_num_rows($search_name) != 0)
+          {
+              while ($row = mysql_fetch_assoc($search_name))
+              {
+                 if ($row[email] == $email)
+                 {  echo "<a href='survey.php'><button type=\"submit\" class=\"ui fluid large teal submit button\"> Login </button> </a>"; }
+                 else{ echo "Email not found!";}
+              }
+          }
+      }
+      ?>
 
-            <div class="ui message">
-                New to us? <a href="#">Sign Up</a>
-            </div>
         </div>
     </div>
 </body>

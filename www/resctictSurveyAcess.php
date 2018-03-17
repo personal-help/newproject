@@ -143,7 +143,7 @@
                     </div>
                 </div>
 
-                <button class="ui button">Back</button>
+                <button class="ui button"><a href="index.php">Back</a></button>
                 <button type="submit" class="ui button primary">Submit</button>
  
         </div>

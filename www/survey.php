@@ -31,7 +31,7 @@
     <?
     include "echo.php";
         while ($row = mysql_fetch_assoc($result))
-             echo "$row[Identification]";
+             echo "$row[STitle]";
     ?> 
                        </p>
                         <h4 class="ui dividing header">Survey Description</h4>
@@ -44,23 +44,13 @@
                         </p>
                         <h4 class="ui dividing header">Type of Survey</h4>
                         <p>
-    <?
-    include "echo.php";
-        while ($row = mysql_fetch_assoc($result))
-             echo "$row[TSurvey]";
-    ?>
+   
                         </p>
                     </div>
                     <div class="six wide column">
                         <h4 class="ui dividing header">Employees</h4>
                         <ul class="ui list">
-                            <li>
-    <?
-    include "echo.php";
-        while ($row = mysql_fetch_assoc($result))
-             echo "$row[TSurvey]";
-    ?>
-                            </li>
+                            <li>Nevil  </li>
                             <li>Tom Redl</li>
                             <li>Harry Nevis</li>
                         </ul>
@@ -92,16 +82,7 @@
                             </label>
                             <input type="text" placeholder="Your answer">
                         </div>
-                        <div class="field">
-                            <label>
-    <?
-    include "echo.php";
-        while ($row = mysql_fetch_assoc($result))
-             echo "$row[Question]";
-    ?>    
-                            </label>
-                            <input type="text" placeholder="Your answer">
-                        </div>
+                        
                         <div class="field">
                             <label>
     <?
@@ -122,13 +103,13 @@
                             </select>
                         </div>
 
-                        <button class="ui button">Cancel</button>
+                        <button class="ui button"><a href="index.php">Cancel</a></button>
                         <button class="ui button primary">Submit</button>
                     </div>
                 </div>
             </form>
         </div>
-    </div>
+    </div><br><br><br><br><br>  
 
     <!-- Footer -->
     <div class="ui inverted vertical footer segment">

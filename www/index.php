@@ -24,7 +24,7 @@
 
     <div class="ui grid container">
         <div class="sixteen wide column">
-            <h1 class="ui header">Open surveys <a class="ui button primary new-survey" href="resctictSurveyAcess.php"><i class="add square icon"></i> New survey</a></h1>
+            <h1 class="ui header">Open surveys <a class="ui button primary new-survey" href="manageSurveyAcess.php"><i class="add square icon"></i> New survey</a></h1>
         </div>
     </div>
 
@@ -36,14 +36,40 @@
                     <img src="assets/img/one.gif">
                 </div>
                 <div class="content">
-                    <a href="survey.php" class="header">Time or money</a>
+                    <a href="registerSurvey.php" class="header">
+                    
+        <?
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[Identification]";
+                        include "move.php";
+        ?>  
+                        
+                    </a>
                     <div class="meta">
-                        <span class="date"><strong>2016-09-09</strong> to <strong>2016-10-10</strong>
+                        <span class="date">
+                            <strong>
+        <?
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[StartDate]";
+        ?>                        
+                            </strong> to <strong>
+        <?    
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[EndDate]";                    
+        ?>                    
+                            </strong>
                     </div>
                 </div>
                 <div class="extra content">
                     <i class="check icon"></i>
-                    44 Completed surveys
+        <?
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[id]", " Completed surveys";
+        ?>
                 </div>
             </div>
         </div>
@@ -56,14 +82,34 @@
                     <img src="assets/img/two.jpg">
                 </div>
                 <div class="content">
-                    <a class="header">Public structure</a>
+                    <a href="survey.php" class="header">Public structure</a>
                     <div class="meta">
-                        <span class="date"><strong>2016-09-09</strong> to <strong>2016-10-10</strong></span>
+                        <span class="date">
+                            
+                            <strong>
+        <?
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[StartDate]";
+        ?>                        
+                            </strong> to <strong>
+        <?    
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[EndDate]";                    
+        ?>                    
+                            </strong>
+                            
+                        </span>
                     </div>
                 </div>
                 <div class="extra content">
                     <i class="check icon"></i>
-                    44 Completed surveys
+        <?
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[id]", " Completed surveys";
+        ?>
                 </div>
             </div>
         </div>
@@ -76,14 +122,34 @@
                     <img src="assets/img/three.png">
                 </div>
                 <div class="content">
-                    <a class="header">Who is better?</a>
+                    <a href="survey.php" class="header">Who is better?</a>
                     <div class="meta">
-                        <span class="date"><strong>2016-09-09</strong> to <strong>2016-10-10</strong></span>
+                        <span class="date">
+                        
+                            <strong>
+        <?
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[StartDate]";
+        ?>                        
+                            </strong> to <strong>
+        <?    
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[EndDate]";                    
+        ?>                    
+                            </strong>
+                            
+                        </span>
                     </div>
                 </div>
                 <div class="extra content">
                     <i class="check icon"></i>
-                    1 Completed surveys
+        <?
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[id]", " Completed surveys";
+        ?>
                 </div>
             </div>
         </div>
@@ -96,14 +162,34 @@
                     <img src="assets/img/four.jpg">
                 </div>
                 <div class="content">
-                    <a class="header">Relation</a>
+                    <a href="survey.php" class="header">Relation</a>
                     <div class="meta">
-                        <span class="date"><strong>2016-09-09</strong> to <strong>2016-10-10</strong></span>
+                        <span class="date">
+                        
+                            <strong>
+        <?
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[StartDate]";
+        ?>                        
+                            </strong> to <strong>
+        <?    
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[EndDate]";                    
+        ?>                    
+                            </strong>
+                            
+                        </span>
                     </div>
                 </div>
                 <div class="extra content">
                     <i class="check icon"></i>
-                    44 Completed surveys
+        <?
+        include "echo.php";
+        while ($row = mysql_fetch_assoc($result))
+             echo "$row[id]", " Completed surveys";
+        ?>
                 </div>
             </div>
         </div>
