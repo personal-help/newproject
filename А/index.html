@@ -23,38 +23,58 @@
          
     
          
-         <div class="row menu">
+    <div class="row menu">
+        
+        <div name="form1">  <div onclick='toggle("form1");' class="mu1 cols col-2"><img src="img/menu/1.png" alt="img">Promotion</div> </div>
+             
+        <div name="form2">  <div onclick='toggle("form2");' class="mu2 cols col-2"><img src="img/menu/2.png" alt="img">Tickets</div>   </div>
+        
+        <div name="form3">  <div onclick='toggle("form3");' class="mu3 cols col-2"><img src="img/menu/3.png" alt="img">Attractions</div> </div>
+        
+        <div name="form4">  <div onclick='toggle("form4");' class="mu4 cols col-2"><img src="img/menu/4.png" alt="img">FInancial Report</div></div>
+        
+        <div name="form5">  <div onclick='toggle("form5");' class="mu5 cols col-2"><img src="img/menu/5.png" alt="img">About company</div></div>
+        
+        <div name="form6">  <div onclick='toggle("form6");' class="mu6 cols col-2"><img src="img/menu/6.png" alt="img">Careers</div></div>
+        
+        <div name="form7">  <div onclick='toggle("form7");' class="mu7 cols col-2"><img src="img/menu/7.png" alt="img">Events & News</div></div>
          
-            <div class="mu1 cols col-2"><img src="img/menu/1.png" alt="img">Promotion</div>
-            <div class="mu2 cols col-2"><img src="img/menu/2.png" alt="img">Tickets</div>
-            <div class="mu3 cols col-2"><img src="img/menu/3.png" alt="img">Attractions</div>
-            <div class="mu4 cols col-2"><img src="img/menu/4.png" alt="img">FInancial Report</div>
-            <div class="mu5 cols col-2"><img src="img/menu/5.png" alt="img">About company</div>
-            <div class="mu6 cols col-2"><img src="img/menu/6.png" alt="img">Careers</div>
-            <div class="mu7 cols col-2"><img src="img/menu/7.png" alt="img">Events & News</div>
+    </div>         
          
-         </div>   
-         
-         info
-          
-         <DIV id="adress"></DIV>   
-          
-        <DIV id="one" style="display:none">one</DIV>
-        <DIV id="two" style="display:none">two</DIV>
-        <DIV id="three" style="display:none">three</DIV>
-        <DIV id="four" style="display:none">four</DIV>
-        <DIV id="five" style="display:none">five</DIV>
-        <DIV id="six" style="display:none">six</DIV>
-        <DIV id="seven" style="display:none">seven</DIV>
-         
-        <script> 
-            function Change(){
-              document.getElementById('adress').innerHTML = document.getElementById(document.getElementById('menu').value).innerHTML}
-        </script> 
-          
+        <div class="info">
+           
+            <div id='conten'></div>
+           
+        </div>       
+           
+            <div id='form1' style='display: none'>
+                
+                <img src="img/menu/1.png"> information
+                <img class="photo" src="img/promotion.jpg">
+                
+            </div>
+           
+            <div id='form2' style='display: none'>
+           
+                
+           
+            </div>
+           
+            <div id='form3' style='display: none'>КОНТЕНТ3</div>
+            <div id='form4' style='display: none'>КОНТЕНТ4</div>
+            <div id='form5' style='display: none'>КОНТЕНТ5</div>
+            <div id='form6' style='display: none'>КОНТЕНТ6</div>
+            <div id='form7' style='display: none'>КОНТЕНТ7</div>
+                
+                <script type='text/javascript'> 
+                    function toggle(id) { 
+                    document.getElementById("conten").innerHTML = document.getElementById(id).innerHTML; 
+                    } 
+                </script>  
+           
        </div>
       </div>
-            
+         
       <div class="row footer">
           <br><br><p>© 2016, Funny Island Company. Attraction photos from Unsplash. Europe map from public domain.</p>
       </div>      
